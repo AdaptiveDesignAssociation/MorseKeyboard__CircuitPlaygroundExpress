@@ -12,6 +12,7 @@ This repository offers an Arduino class structure for working with some of the d
 
 The Arduino header file also includes a class and method for triggering the row scan and select features on some Android devices.  That is detailed here using an Arduino Leonardo: https://www.instructables.com/id/Gboard-Input-Switch-for-Morse-Code/.  The code is left here to provide for that funcationality.
 
+## Hardware Components
 For this tutorial, you will need:
 - 1 x Circuit Playground Express: https://www.adafruit.com/product/3333
 - 1 x USB a-micro (for programming and plugging into a tablet or smartphone): https://www.adafruit.com/product/2185
@@ -21,12 +22,14 @@ For this tutorial, you will need:
 
 The project also compliments Dave Astels project documented here on the Adafruit website: https://learn.adafruit.com/android-gboard-morse-code-at-with-circuitplayground-express/overview.
 
+## Downloading Software
 First, you will need to insall GBoard and download the English/Morse language: https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin&hl=en_US, and configure it: https://support.google.com/accessibility/android/answer/9011881?hl=en
 
 Dave's post also goes into some more detail on how to configure the GBoard settings and attach it to your phone: https://learn.adafruit.com/android-gboard-morse-code-at-with-circuitplayground-express/installing-gboard
 
 You will also need the Arduino IDE and set it up to be able to program the Circuit Playground Express: https://learn.adafruit.com/adafruit-circuit-playground-express/arduino
 
+## Looking at the Code
 Next, you can download or clone this repository by clicking on the green "Clone or download button".  Unzip the folder, rename the file MorseKeyboard_CircuitPlaygroundExpress and move it to your Arduino sketches folder.
 
 Now let's open the sketch MorseKeyboard_CircuitPlaygroundExpress in the Arduino IDE.  The sketch should include the MorseKeyboard_CircuitPlaygroundExpress.ino and the morseKeyboard.h header file.  Let's look a bit more at the .ino file.
