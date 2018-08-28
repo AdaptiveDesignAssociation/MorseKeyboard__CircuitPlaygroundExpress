@@ -13,11 +13,11 @@ This repository offers an Arduino class structure for working with some of the d
 The Arduino header file also includes a class and method for triggering the row scan and select features on some Android devices.  That is detailed here using an Arduino Leonardo: https://www.instructables.com/id/Gboard-Input-Switch-for-Morse-Code/.  The code is left here to provide for that funcationality.
 
 For this tutorial, you will need:
-⋅⋅⋅ 1 x Circuit Playground Express: https://www.adafruit.com/product/3333
-⋅⋅⋅ 1 x USB a-micro (for programming and plugging into a tablet or smartphone): https://www.adafruit.com/product/2185
-⋅⋅⋅ 1 x USB-OTG Cable (for plugging into a tablet of smartphone): https://www.adafruit.com/product/1099
-⋅⋅⋅ 1 x pack of alligator clips: https://www.adafruit.com/product/1008
-⋅⋅⋅ 2 x micro-switches: https://www.adafruit.com/product/819
+- 1 x Circuit Playground Express: https://www.adafruit.com/product/3333
+- 1 x USB a-micro (for programming and plugging into a tablet or smartphone): https://www.adafruit.com/product/2185
+- 1 x USB-OTG Cable (for plugging into a tablet of smartphone): https://www.adafruit.com/product/1099
+- 1 x pack of alligator clips: https://www.adafruit.com/product/1008
+- 2 x micro-switches: https://www.adafruit.com/product/819
 
 The project also compliments Dave Astels project documented here on the Adafruit website: https://learn.adafruit.com/android-gboard-morse-code-at-with-circuitplayground-express/overview.
 
