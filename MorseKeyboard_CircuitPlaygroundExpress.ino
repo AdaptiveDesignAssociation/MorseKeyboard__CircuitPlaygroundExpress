@@ -27,7 +27,7 @@ char altDitKey = 204; //alt key for shorts, that can be tied to controlling row 
 char altDahKey = 205; // alt key for longs, that can be tied to controlling row scanning
 
 // Arudino class that prepares the short key with variables above (see morseKeyboard.h)
-KeyboardKey shortKey(ditPin, ditKey, altDitKey, debounceTime, buzzerPin, ditSound, ditSoundDuration, activeButtonValue);
+//KeyboardKey shortKey(ditPin, ditKey, altDitKey, debounceTime, buzzerPin, ditSound, ditSoundDuration, activeButtonValue);
 
 // Arudino class that prepares the long key with variables above (see morseKeyboard.h)
 KeyboardKey longKey(dahPin, dahKey, altDahKey, debounceTime, buzzerPin, dahSound, dahSoundDuration, activeButtonValue);
@@ -51,4 +51,8 @@ void loop() {
     
   shortKey.Press(shiftValue, speedTyper);
   longKey.Press(shiftValue, speedTyper);
+  
+  //if you don't want key repeats, you can use these methods instead
+  //shortKey.PressNoRepeat();
+  //longKey.PressNoRepeat();
 }

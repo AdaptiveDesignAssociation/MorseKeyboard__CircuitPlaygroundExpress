@@ -43,8 +43,8 @@ class KeyboardKey {
     {
       int keyState = digitalRead(keyPin);
       bool shiftCheck = isShiftPressed;
-      int playLength = sndLength - pressSpeed;
       pressSpeed = ditdahTimer;
+      int playLength = sndLength - pressSpeed;
 
       if (isShiftPressed) {
         keyValue = altLetterValue;
@@ -72,6 +72,28 @@ class KeyboardKey {
           }
           lastDebounceTime = millis();
         }
+      }
+      else {
+        keyFirstPress = true;
+      }
+    }
+
+    void PressNoRepeat()
+    {
+      int keyState = digitalRead(keyPin);
+      int playLength = sndLength;
+
+      if (keyState == buttonTriggerState) {
+        if (millis() - lastDebounceTime > debounceDelay) {
+          if (keyFirstPress == true) {
+            tone(sndPin, freq, playLength / 3);
+            Keyboard.press(keyValue);
+            Keyboard.release(keyValue);
+            keyFirstPress = false;
+            lastDebounceTime = millis();
+          }
+        }
+        lastDebounceTime = millis();
       }
       else {
         keyFirstPress = true;
