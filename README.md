@@ -108,6 +108,10 @@ void loop() {
     
   shortKey.Press(shiftValue, speedTyper);
   longKey.Press(shiftValue, speedTyper);
+
+  //if you don't want key repeats (so you have to release and press to enter the character again, comment out the above and uncomment the below
+  //shortKey.PressNoRepeat();
+  //longKey.PressNoRepeat();
 }
 ```
 The `bool shiftValue` refers again to the optional third button to enter into the accessibility features of the Android device.  We are not using that so set the value to false.
